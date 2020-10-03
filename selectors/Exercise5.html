@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #5: Specificity calculation
+
+    </title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Compute the specificity scores</h1> 
+
+        * { } <span> > 0</span><br>
+        li { } <span> >1</span><br>
+        li:first-line { } <span> >2</span><br>
+        ul li { }<span> >2</span><br>
+        ul ol+li { } <span> >3</span><br>
+        h1 + *[rel=up] { } <span> >11</span><br>
+        ul ol li.red { } <span> >13</span><br>
+        li.red.level { } <span> >21</span><br>
+        style="" <span> >1</span><br>
+        p { } <span> >1</span><br>
+        div p { } <span> >2</span><br>
+        .sith <span> >1</span><br>
+        div p.sith { } <span> >12</span><br>
+        #sith <span> >1</span><br>
+        body #darkside .sith p { } <span> >112</span><br>
+</body>
+</html>

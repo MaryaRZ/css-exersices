@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            /*Move the list to the left side of the page 
+            (by setting left padding to 0 on the list itself).*/
+            padding-left: 0 ;
+            list-style: none;
+        }
+        ul li {
+            display: inline-table;
+            list-style: none;
+            background-color: blue;
+            border: 1px black solid;
+            text-align: center;
+            /*width of the boxes to 3em*/
+            width: 3em ;
+            color: white;
+        }
+        /* Make all odd list elements hidden, so that they don't take up space.*/
+
+        /*Make the prime elements invisible, so that their space is left empty.*/
+    .odd {
+        display: none;
+    }
+
+    #two {
+        visibility: hidden;
+    }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="one" class="odd">1</li>
+        <li id="two" class="even">2</li>
+        <li id="three" class="odd">3</li>
+        <li id="four" class="even">4</li>
+        <li id="five" class="odd">5</li>
+        <li id="six" class="even">6</li>
+        <li id="seven" class="odd">7</li>
+        <li id="eight" class="even">8</li>
+        <li id="nine" class="odd">9</li>
+        <li id="ten" class="even"> 10</li>
+    
+    </ul>
+</body>
+</html>
