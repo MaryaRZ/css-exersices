@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise #3: Styling boxes</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin: 5px;
+            float: left; /* float divs next to each other */
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+            line-height: 50px; /* align text vertically (this works only for a single line of text) */
+            text-align: center;
+
+        }
+        .odd {
+            background-color: #ff3333;
+        }
+        .even {
+            background-color: #0033cc ;
+        }
+        .size1 {
+            font-size: 0.7em;
+        }
+        .size2 {
+            font-size: 1.3em;
+        }
+        #lucky {
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+<div class="odd" class="size1">1</div>
+<div class="even" class="size1" >2</div>
+<div class="odd" class="size1">3</div>
+<div class="even">4</div>
+<div class="odd">5</div>
+<div class="even">6</div>
+<div class="odd" id="lucky">7</div>
+<div class="even" class="size2">8</div>
+<div class="odd" class="size2">9</div>
+<div class="even" class="size2">10</div>
+</body>
+</html>
